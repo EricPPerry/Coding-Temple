@@ -1,0 +1,198 @@
+a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+a:hover{
+  color: grey;
+}
+
+body{
+  font-family: 'Raleway';
+}
+
+/*Navbar styling*/
+
+.nav-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 25px;
+    gap: 0px 0px;
+    grid-template-areas:
+      "Logo Home-Link Features-Link Actors-Link Mission-link Contact-Link .";
+    background-color: black;
+  }
+  
+  .Logo { 
+      grid-area: Logo;
+      color: whitesmoke;
+      font-size:1.25em;
+ }
+  
+  .Home-Link { 
+      grid-area: Home-Link;
+      top: 5px;
+     }
+  
+  .Features-Link { grid-area: 
+    Features-Link;
+ }
+  
+  .Actors-Link { 
+      grid-area: Actors-Link;
+     }
+  
+  .Mission-link { 
+      grid-area: Mission-link;
+     }
+  
+  .Contact-Link { 
+      grid-area: Contact-Link;
+     }
+
+
+  /*Featured Shows header, with background image*/
+  .feature-header{
+      background-image: url('../images/theater-image-background.jpg');
+      background-size: 100% 100%;
+      height: 400px;
+      width: 100%;
+      color: whitesmoke;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size:3rem;
+  }
+
+  /*Upcoming shows/schedule styling*/
+  .schedule-grid {
+    display: grid;
+    grid-template-columns: 1fr 150px 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 150px 2fr 2fr 2fr;
+    gap: 20px 0px;
+    grid-template-areas:
+      ". Month-Schedule Month-Schedule Month-Schedule ."
+      ". Show-Img1 Show-Info1 More-Info1 ."
+      ". Show-Img2 Show-Info2 More-Info2 ."
+      ". Show-Img3 Show-Info3 More-Info3 ."
+      ". Show-Img4 Show-Info4 More-Info4 .";
+    background-color: white;
+    max-height: 100%;
+  }
+
+.Month-Schedule { 
+    grid-area: Month-Schedule;
+    background-color: lightgray; 
+    border: 1px solid darkgray;
+    margin-top: 25px;
+}
+
+.showimg img{
+  width: 100%;
+  height: 100%;
+
+}
+  .Show-Img1 { 
+      grid-area: Show-Img1; 
+}
+  .Show-Img2 { 
+      grid-area: Show-Img2; 
+    }
+  .Show-Img3 { 
+      grid-area: Show-Img3; 
+    }
+  .Show-Img4 { 
+      grid-area: Show-Img4; 
+    }
+  .Show-Info1 { 
+      grid-area: Show-Info1; 
+    }
+  .Show-Info2 { 
+      grid-area: Show-Info2; 
+    }
+  .Show-Info3 { 
+      grid-area: Show-Info3; 
+    }
+  .Show-Info4 { 
+      grid-area: Show-Info4; 
+    }
+
+  .More-Info1 { 
+      grid-area: More-Info1; 
+    }
+  .More-Info2 { 
+      grid-area: More-Info2; 
+    }
+  .More-Info3 { 
+      grid-area: More-Info3; 
+    }
+  .More-Info4 { 
+      grid-area: More-Info4; 
+    }
+
+/*Footer styling*/
+.bottom-space{
+  margin-top: 25px;
+  height: 25px;
+  background: black;
+}
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 20px 0px;
+  grid-template-areas:
+    ". google-map theater-info future-shows social-media .";
+  background-color: black;
+  color: whitesmoke;
+
+}
+
+.google-map { 
+  grid-area: google-map;
+
+ }
+
+.theater-info { 
+  grid-area: theater-info;
+ }
+
+.future-shows { 
+  grid-area: future-shows
+ }
+
+.social-media { 
+  grid-area: social-media;
+ }
+
+ .bottom-list li{
+   margin-bottom: 20px;
+   font-size: .90em;
+ }
+
+
+
+
+/*misc element styling*/
+
+ul {
+  list-style-type: none;
+}
+
+h4 {
+  margin: 0;
+}
+
+button {
+  position: relative;
+  left: 25%;
+  top: 25%;
+  background-color: orangered;
+  border-radius: 10%;
+  color: whitesmoke;
+  padding: 10px;
+}
+
+.schedule {
+  border-bottom: 1px solid grey;
+}
